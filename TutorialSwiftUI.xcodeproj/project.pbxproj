@@ -15,6 +15,8 @@
 		F213256D22A76B670082A83A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F213256B22A76B670082A83A /* LaunchScreen.storyboard */; };
 		F213257822A76B670082A83A /* TutorialSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F213257722A76B670082A83A /* TutorialSwiftUITests.swift */; };
 		F213258322A76B670082A83A /* TutorialSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F213258222A76B670082A83A /* TutorialSwiftUIUITests.swift */; };
+		F2675AA922AF19A400A734B2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2675AA822AF19A400A734B2 /* CircleImage.swift */; };
+		F2675AAB22AF1A8000A734B2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2675AAA22AF1A8000A734B2 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F213255C22A76B660082A83A;
 			remoteInfo = TutorialSwiftUI;
+		};
+		F216716122B4D5B000611892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F216715D22B4D5AF00611892 /* BuildingListsAndNavigation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F216714622B4D5AD00611892;
+			remoteInfo = BuildingListsAndNavigation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +58,9 @@
 		F213257E22A76B670082A83A /* TutorialSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F213258222A76B670082A83A /* TutorialSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F213258422A76B670082A83A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F216715D22B4D5AF00611892 /* BuildingListsAndNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BuildingListsAndNavigation.xcodeproj; path = BuildingListsAndNavigation/BuildingListsAndNavigation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F2675AA822AF19A400A734B2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		F2675AAA22AF1A8000A734B2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		F213255422A76B660082A83A = {
 			isa = PBXGroup;
 			children = (
+				F216715D22B4D5AF00611892 /* BuildingListsAndNavigation.xcodeproj */,
 				F213255F22A76B660082A83A /* TutorialSwiftUI */,
 				F213257622A76B670082A83A /* TutorialSwiftUITests */,
 				F213258122A76B670082A83A /* TutorialSwiftUIUITests */,
@@ -99,12 +112,13 @@
 		F213255F22A76B660082A83A /* TutorialSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F216716322B4D5DA00611892 /* Views */,
 				F213256022A76B660082A83A /* AppDelegate.swift */,
 				F213256222A76B660082A83A /* SceneDelegate.swift */,
 				F213256422A76B660082A83A /* ContentView.swift */,
 				F213256622A76B670082A83A /* Assets.xcassets */,
-				F213256B22A76B670082A83A /* LaunchScreen.storyboard */,
 				F213256E22A76B670082A83A /* Info.plist */,
+				F213256B22A76B670082A83A /* LaunchScreen.storyboard */,
 				F213256822A76B670082A83A /* Preview Content */,
 			);
 			path = TutorialSwiftUI;
@@ -134,6 +148,23 @@
 				F213258422A76B670082A83A /* Info.plist */,
 			);
 			path = TutorialSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		F216715E22B4D5AF00611892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F216716222B4D5B000611892 /* BuildingListsAndNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F216716322B4D5DA00611892 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2675AA822AF19A400A734B2 /* CircleImage.swift */,
+				F2675AAA22AF1A8000A734B2 /* MapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +257,12 @@
 			mainGroup = F213255422A76B660082A83A;
 			productRefGroup = F213255E22A76B660082A83A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F216715E22B4D5AF00611892 /* Products */;
+					ProjectRef = F216715D22B4D5AF00611892 /* BuildingListsAndNavigation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F213255C22A76B660082A83A /* TutorialSwiftUI */,
@@ -234,6 +271,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F216716222B4D5B000611892 /* BuildingListsAndNavigation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BuildingListsAndNavigation.app;
+			remoteRef = F216716122B4D5B000611892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F213255B22A76B660082A83A /* Resources */ = {
@@ -268,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F213256122A76B660082A83A /* AppDelegate.swift in Sources */,
+				F2675AA922AF19A400A734B2 /* CircleImage.swift in Sources */,
+				F2675AAB22AF1A8000A734B2 /* MapView.swift in Sources */,
 				F213256322A76B660082A83A /* SceneDelegate.swift in Sources */,
 				F213256522A76B660082A83A /* ContentView.swift in Sources */,
 			);
