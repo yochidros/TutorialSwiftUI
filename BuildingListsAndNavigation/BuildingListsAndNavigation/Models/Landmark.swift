@@ -14,7 +14,7 @@ struct Coordinates: Hashable, Codable {
     var longitude: Double
 }
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     fileprivate var imageName: String
@@ -23,7 +23,7 @@ struct Landmark: Hashable, Codable {
     var park: String
     var category: Category
     
-    var locationCOordinate: CLLocationCoordinate2D {
+    var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
             longitude: coordinates.longitude
